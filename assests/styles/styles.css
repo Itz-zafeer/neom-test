@@ -1593,6 +1593,7 @@ left: 0 !important;
     }
     .single-news img{
         height: 200px;
+        border-radius: 10px;
     }
     .single-news .date span{
         font-size: 12px;
@@ -1751,6 +1752,7 @@ left: 0 !important;
         height: 3.5px;
         display: block !important;
         margin-top: 8px;
+        border-radius: 10px !important;
     }
     .subtitle .subtititles div img{
         display: none;
