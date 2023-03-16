@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="weatherModal" class="opacity-0 top-0 left-0 transition-all duration-500 pointer-events-none	  w-full h-[100vh]  
+    flex justify-center items-end md:items-center fixed z-[12]
+    ">
+    <span id="acha bety" class="w-full h-[100vh] bg-[#000000] opacity-[0.7] absolute
+    top-[0px] left-[0px] z-[13]
+    "></span>
+       <div class="w-full md:w-[36.25vw] min-h-[500px] md:min-h-[unset]  relative  
+       bg-[#FFFFFF]   md:rounded-[0.78125vw] border-[1px] border-[#707070]
+       py-[54px] md:py-[2.60416666667vw]
+         z-[13]
+">
+<img src="./assests/images/icon/close.svg" alt="Close" class="w-[1.05vw] h-[1.05vw] absolute top-[1.5vw] right-[1.5vw]  md:block hidden " onclick="closeWeatherModal()">
+
+
+           <div class="w-[335px] md:w-[31.0416666667vw] mx-[auto] ">
+
+            <div onclick="closeWeatherModal()"  class="block md:hidden absolute top-0 left-[50%]
+            translate-x-[-50%] w-[57px] h-[22px]">
+            <svg xmlns="http://www.w3.org/2000/svg" width="57" height="22" viewBox="0 0 57 22">
+                <g id="Group_89584" data-name="Group 89584" transform="translate(-168 -376)">
+                  <path id="Rectangle_3657" data-name="Rectangle 3657" d="M0,0H57a0,0,0,0,1,0,0V12A10,10,0,0,1,47,22H10A10,10,0,0,1,0,12V0A0,0,0,0,1,0,0Z" transform="translate(168 376)" fill="#d1d1d1"></path>
+                  <path id="Path_106349" data-name="Path 106349" d="M0,9.929,5.007,4.922,0,0" transform="translate(201.429 384.5) rotate(90)" fill="none" stroke="#878787" stroke-width="1.5"></path>
+                </g>
+              </svg>
+            </div>
+
+
+               <h3 class="secondHeading
+   ">
+                   UNIT SELECTION
+               </h3>
+               <div class="mt-[16px] md:mt-[2.60416666667vw] flex flex-col gap-y-[16px] md:gap-y-[1.5625vw]">
+                   <div class="flex flex-col gap-y-[8px] md:gap-y-[0.72916666666vw]">
+                       <h4 class="text-[#000000] md:text-[1.25vw]   ">Select Community</h4>
+                       <div class="relative w-full">
+                           <div
+                           class="h-[42px] md:h-[2.60416666667vw] w-full border-[0.5px] border-[#707070] rounded-[7px] px-[16px] md:px-[1.5625vw] flex justify-between items-center ">
+                                                <span   class="dropdownValue md:text-[0.9375vw] text-[14px] leading-[20px]
+                                                md:leading-[1.30208333333vw] text-[#878787]    outline-none
+                        ">All </span>
+                           <svg onclick="openDropdown(this)"  id="open-values" class=" cursor-pointer ml-[8px] transform transition-all duration-500 inline-block"
+                               xmlns="http://www.w3.org/2000/svg" width="10.042" height="6.077" viewBox="0 0 10.042 6.077">
+                               <path id="Path_101295" data-name="Path 101295" d="M456.032,1780.9l4.19,4.419-4.5,4.581"
+                                   transform="translate(1790.43 -455.186) rotate(90)" fill="none" stroke="#000"
+                                   stroke-width="1.5"></path>
+                           </svg>
+                           
+   
+                            </div>
+                            <ul class="absolute top-[100%] left-0 w-full transition-all duration-500  dropdownList   bg-white z-[5] rounded-[10px] md:rounded-[0.78vw] max-h-[0px] overflow-hidden dropdownShadow ">
+                               <li class="md:text-[0.9375vw] text-[14px] leading-[20px]
+                                                md:leading-[1.30208333333vw] py-[0.6vw] text-[#878787]  cursor-pointer hover:opacity-[0.8] hover:bg-[#F9F7F2] py-[10px] px-[14px] md:py-[1vw] md:px-[1.5625vw]">Community 1</li> 
+                               <li class="md:text-[0.9375vw] text-[14px] leading-[20px]
+                                                md:leading-[1.30208333333vw] py-[0.6vw] text-[#878787]  cursor-pointer hover:opacity-[0.8] hover:bg-[#F9F7F2] py-[10px] px-[14px] md:py-[1vw] md:px-[1.5625vw]">Community 2</li> 
+                               <li class="md:text-[0.9375vw] text-[14px] leading-[20px]
+                                                md:leading-[1.30208333333vw] py-[0.6vw] text-[#878787] cursor-pointer hover:opacity-[0.8] hover:bg-[#F9F7F2] py-[10px] px-[14px] md:py-[1vw] md:px-[1.5625vw]">Community 3</li> 
+                            </ul>
+                       </div>
+                       
+                   </div>
+                   <div id="modalStep2" class="flex flex-col gap-y-[8px] md:gap-y-[0.72916666666vw] opacity-[0.5] pointer-events-none">
+                       <h4 class="                        text-[14px] leading-[20px]">Select Unity Type</h4>
+                       <div class="relative w-full">
+                        <div
+                        class="h-[42px] md:h-[2.60416666667vw] w-full border-[0.5px] border-[#707070] rounded-[7px] px-[16px] md:px-[1.5625vw] flex justify-between items-center ">
+                                             <span   class="dropdownValue md:text-[0.9375vw] text-[14px] leading-[20px] text-[#878787]   outline-none
+                     ">All </span>
+                        <svg onclick="openDropdown(this)"  id="open-values" class=" cursor-pointer ml-[8px] transform transition-all duration-500 inline-block"
+                            xmlns="http://www.w3.org/2000/svg" width="10.042" height="6.077" viewBox="0 0 10.042 6.077">
+                            <path id="Path_101295" data-name="Path 101295" d="M456.032,1780.9l4.19,4.419-4.5,4.581"
+                                transform="translate(1790.43 -455.186) rotate(90)" fill="none" stroke="#000"
+                                stroke-width="1.5"></path>
+                        </svg>
+                        
+
+                         </div>
+                         <ul class="absolute top-[100%] left-0 w-full transition-all duration-500  dropdownList   bg-white z-[5] rounded-[10px] md:rounded-[0.78vw] max-h-[0px] overflow-hidden dropdownShadow ">
+                            <li class="md:text-[0.9375vw] text-[14px] leading-[20px]
+                                                md:leading-[1.30208333333vw] py-[0.6vw] text-[#878787]  cursor-pointer hover:opacity-[0.8] hover:bg-[#F9F7F2] py-[10px] px-[14px] md:py-[1vw] md:px-[1.5625vw]">Unit 1</li> 
+                            <li class="md:text-[0.9375vw] text-[14px] leading-[20px]
+                                                md:leading-[1.30208333333vw] py-[0.6vw] text-[#878787]  cursor-pointer hover:opacity-[0.8] hover:bg-[#F9F7F2] py-[10px] px-[14px] md:py-[1vw] md:px-[1.5625vw]">Unit 2</li> 
+                            <li class="text-[0.9375vw]
+                            leading-[1.30208333333vw] py-[0.6vw] text-[#878787] cursor-pointer hover:opacity-[0.8] hover:bg-[#F9F7F2] py-[1vw] px-[1.5625vw]">Unit 3</li> 
+                         </ul>
+                    </div>
+                       
+                   </div>
+                   <div id="modalStep3" class="flex flex-col gap-y-[8px] md:gap-y-[0.72916666666vw] mb-[1vw] opacity-[0.5] pointer-events-none">
+                       <h4 class="                        md:leading-[1.71875vw] ">Enter Unit Number</h4>
+                       <div class="relative w-full">
+                        <div
+                        class="h-[42px] md:h-[2.60416666667vw] w-full border-[0.5px] border-[#707070] rounded-[7px] px-[16px] md:px-[1.5625vw] flex justify-between items-center ">
+                                             <span   class="dropdownValue     md:leading-[1.30208333333vw] text-[#878787]   outline-none
+                     ">Ex: 9 </span>
+                        <svg onclick="openDropdown(this)"  id="open-values" class=" cursor-pointer ml-[8px] transform transition-all duration-500 inline-block"
+                            xmlns="http://www.w3.org/2000/svg" width="10.042" height="6.077" viewBox="0 0 10.042 6.077">
+                            <path id="Path_101295" data-name="Path 101295" d="M456.032,1780.9l4.19,4.419-4.5,4.581"
+                                transform="translate(1790.43 -455.186) rotate(90)" fill="none" stroke="#000"
+                                stroke-width="1.5"></path>
+                        </svg>
+                        
+
+                         </div>
+                         <ul class="absolute top-[100%] left-0 w-full transition-all duration-500  dropdownList  overflow-scroll  bg-white z-[5] rounded-[0.5vw] max-h-[0px] overflow-hidden dropdownShadow ">
+                            <li class="md:text-[0.9375vw] text-[14px] leading-[20px]
+                                                md:leading-[1.30208333333vw] py-[0.6vw] text-[#878787]  cursor-pointer hover:opacity-[0.8] hover:bg-[#F9F7F2] py-[10px] px-[14px] md:py-[1vw] md:px-[1.5625vw]"> 1</li> 
+                            <li class="md:text-[0.9375vw] text-[14px] leading-[20px]
+                                                md:leading-[1.30208333333vw] py-[0.6vw] text-[#878787]  cursor-pointer hover:opacity-[0.8] hover:bg-[#F9F7F2] py-[10px] px-[14px] md:py-[1vw] md:px-[1.5625vw]"> 2</li> 
+                            <li class="text-[0.9375vw]
+                            leading-[1.30208333333vw] py-[0.6vw] text-[#878787] cursor-pointer hover:opacity-[0.8] hover:bg-[#F9F7F2] py-[1vw] px-[1.5625vw]"> 3</li> 
+                       
+                            <li class="md:text-[0.9375vw] text-[14px] leading-[20px]
+                                                md:leading-[1.30208333333vw] py-[0.6vw] text-[#878787]  cursor-pointer hover:opacity-[0.8] hover:bg-[#F9F7F2] py-[10px] px-[14px] md:py-[1vw] md:px-[1.5625vw]"> 4</li> 
+                            <li class="md:text-[0.9375vw] text-[14px] leading-[20px]
+                                                md:leading-[1.30208333333vw] py-[0.6vw] text-[#878787]  cursor-pointer hover:opacity-[0.8] hover:bg-[#F9F7F2] py-[10px] px-[14px] md:py-[1vw] md:px-[1.5625vw]"> 5</li> 
+                            <li class="text-[0.9375vw]
+                            leading-[1.30208333333vw] py-[0.6vw] text-[#878787] cursor-pointer hover:opacity-[0.8] hover:bg-[#F9F7F2] py-[1vw] px-[1.5625vw]"> 6</li> 
+                       
+                            <li class="md:text-[0.9375vw] text-[14px] leading-[20px]
+                                                md:leading-[1.30208333333vw] py-[0.6vw] text-[#878787]  cursor-pointer hover:opacity-[0.8] hover:bg-[#F9F7F2] py-[10px] px-[14px] md:py-[1vw] md:px-[1.5625vw]"> 7</li> 
+                            <li class="md:text-[0.9375vw] text-[14px] leading-[20px]
+                                                md:leading-[1.30208333333vw] py-[0.6vw] text-[#878787]  cursor-pointer hover:opacity-[0.8] hover:bg-[#F9F7F2] py-[10px] px-[14px] md:py-[1vw] md:px-[1.5625vw]"> 8</li> 
+                            <li class="text-[0.9375vw]
+                            leading-[1.30208333333vw] py-[0.6vw] text-[#878787] cursor-pointer hover:opacity-[0.8] hover:bg-[#F9F7F2] py-[1vw] px-[1.5625vw]"> 9</li> 
+                       
+                        </ul>
+                    </div>
+                       
+                   </div>
+                   <button  onclick="closeBtnAndShowSchdeule()"  id="modalStep4" class="
+                   
+                   md:w-[5.67708333333vw] bg-black font-[300] text-white uppercase text-[14px] md:text-[0.9375vw] leading-[1.14583333333vw] 
+                   rounded-[26px]
+                   md:rounded-[1.35416666667vw]   h-[36px] w-full
+                   md:h-[2.1875vw] mx-[auto]  
+                   
+                   
+                   mt-[8px] md:mt-[unset]
+                   
+                   
+                        transition-all duration-500 hover:bg-[#B89535]     hidden   ">Done</button>
+               </div>
+             
+               
+             
+           </div>
+
+       </div>
+   </div> 
+</body>
+</html>

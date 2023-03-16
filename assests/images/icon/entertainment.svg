@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="13" viewBox="0 0 13 13">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_3576" data-name="Rectangle 3576" width="13" height="13" transform="translate(1064 340.842)" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <path id="path246" d="M0-20H10.748V-9.252H0Z" transform="translate(0 20)" fill="none" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_26424" data-name="Mask Group 26424" transform="translate(-1064 -340.842)" clip-path="url(#clip-path)">
+    <g id="g240" transform="translate(1065 342.094)">
+      <g id="g242">
+        <g id="g244" clip-path="url(#clip-path-2)">
+          <g id="g250" transform="translate(0.315 0.315)">
+            <path id="path252" d="M-7.985,0h-4.079l-4.951,4.951a.845.845,0,0,0,0,1.191l3.73,3.73a.845.845,0,0,0,1.191,0l4.951-4.951V.842A.845.845,0,0,0-7.985,0Z" transform="translate(17.261)" fill="none" stroke="#878787" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          </g>
+          <g id="g254" transform="translate(7.298 2.101)">
+            <path id="path256" d="M-.991-.991a.675.675,0,0,1-.954,0,.674.674,0,0,1,0-.954.674.674,0,0,1,.954,0A.674.674,0,0,1-.991-.991Z" transform="translate(2.143 2.143)" fill="none" stroke="#878787" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
