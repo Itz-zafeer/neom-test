@@ -5,7 +5,7 @@ $(function () {
   $("#sidebar").load("sidebar.html");
 });
 
-document.querySelectorAll('img').forEach(img=>img.src ="https://neom-v2.vercel.app/assests/images/home/banner.jpg")
+// document.querySelectorAll('img').forEach(img=>img.src ="https://neom-v2.vercel.app/assests/images/home/banner.jpg")
 
 let isDesktop = window.innerWidth > 768
 window.addEventListener('resize',()=>{
